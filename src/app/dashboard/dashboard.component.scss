@@ -1,0 +1,16 @@
+.dashboard-container {
+  display: grid;
+  grid-template-columns: 690px 600px 440px;
+  // grid-auto-rows: minmax(min-content, max-content);
+  grid-gap: 15px;
+  width: 100%;
+
+  @media (max-width: 1800px) {
+    grid-template-columns: 500px 500px;
+  }
+
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+  }
+}

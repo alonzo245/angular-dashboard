@@ -1,0 +1,32 @@
+.box-row-item {
+  flex-grow: 1;
+  list-style: none;
+  color: #d1d1d1;
+  
+  &:nth-child(1){
+    padding-left: 30px;
+  }
+
+  &:nth-child(1) {
+    flex-grow: 1.5;
+    max-width: 55%;
+    // background-color: aqua;
+  }
+
+  .box-row-item-title {
+    font-size: 1.2em;
+    margin: 3px 0;
+
+    &-v2 {
+      font-size: 0.9em;
+    }
+  }
+
+  .box-row-item-desc {
+    font-size: 0.8em;
+
+    &-v2 {
+      font-size: 1.4em;
+    }
+  }
+}
