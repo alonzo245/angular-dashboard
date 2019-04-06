@@ -1,4 +1,4 @@
 <ul class="box-row-item" *ngFor="let value of values;">
   <li class="box-row-item-value">{{value.row[0].title}}</li>
-  <li class="box-row-item-desc">{{value.row[1].desc}}</li>
+  <li class="box-row-item-desc" innerHtml="{{value.row[1].desc}}"></li>
 </ul>
