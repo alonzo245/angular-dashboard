@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+@Injectable({
+  providedIn: 'root'
 })
-export class AppComponent {
+export class FeaturesService {
+
+  constructor() { }
+
   features = [
     {
-      type: 'row-two-values-feature',
+      type: 'clear-web-types',
       mainTitle: 'CLEAR WEB TYPES',
       featureData: [
         {
@@ -19,31 +20,31 @@ export class AppComponent {
             },
             {
               title: '694',
-              desc: 'jjjj <br> rrr'
+              desc: 'ATTACK <br> INDICATION'
             }
           ]
         },
         {
           row: [
             {
-              title: '6545',
-              desc: 'www <br> rrr'
+              title: '694',
+              desc: 'ATTACK <br> INDICATION'
             },
             {
               title: '694',
-              desc: 'ccccc <br> zzzz'
+              desc: 'ATTACK <br> INDICATION'
             }
           ]
         },
         {
           row: [
             {
-              title: '9088',
-              desc: 'werwe <br> sdfdsf'
+              title: '694',
+              desc: 'ATTACK <br> INDICATION'
             },
             {
-              title: '34543',
-              desc: 'sdfdsf <br> sdfdsf'
+              title: '694',
+              desc: 'ATTACK <br> INDICATION'
             }
           ]
         },

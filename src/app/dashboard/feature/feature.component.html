@@ -1,0 +1,13 @@
+<div class="box">
+  <div class="title">{{data.mainTitle}}</div>
+
+  <ng-container *ngFor="let item of data.featureData; let myIndex = index">
+
+    <ng-container [ngSwitch]="data.type">
+      <app-row-two-values-feature *ngSwitchCase="'row-two-values-feature'" [values]='data.featureData'>
+      </app-row-two-values-feature>
+
+      <!-- <div *ngSwitchDefault>...</div> -->
+    </ng-container>
+  </ng-container>
+</div>

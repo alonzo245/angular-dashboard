@@ -1,0 +1,35 @@
+.box {
+  background-color: #254462;
+
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 1em;
+    color: #d1d1d1;
+    padding: 0px 10px;
+    line-height: 30px;
+    height: 30px;
+    background-color: #243a4c;
+  }
+}
+
+app-row-two-values-feature {
+  height: 80px;
+  border-top: 1px solid #243a4c;
+  display: flex;
+  align-items: center;
+}
+
+.box-row-no-border {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.box-row-double {
+  padding: 10px 0;
+  height: 160px;
+  text-align: center;
+}
