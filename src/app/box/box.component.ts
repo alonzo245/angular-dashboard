@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-box',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+ 
+   }
+  
+  @Input() box;
 
   ngOnInit() {
+    console.log('box')
+    console.log(this.box)
   }
 
 }

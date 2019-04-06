@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-box-row-item',
@@ -9,6 +9,7 @@ export class BoxRowItemComponent implements OnInit {
 
   constructor() { }
 
+  @Input() data: any;
   ngOnInit() {
   }
 

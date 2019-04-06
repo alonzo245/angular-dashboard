@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-box-title',
@@ -9,7 +9,10 @@ export class BoxTitleComponent implements OnInit {
 
   constructor() { }
 
+  @Input() title: any;
+  title2: string = 'ddd'
   ngOnInit() {
+    
   }
 
 }
