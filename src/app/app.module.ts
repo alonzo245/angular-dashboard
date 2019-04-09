@@ -10,6 +10,9 @@ import { GraphFeatureComponent } from './dashboard/feature/graph-feature/graph-f
 import { RowTreeValuesFeatureComponent } from './dashboard/feature/row-tree-values-feature/row-tree-values-feature.component';
 import { ProgressBarComponent } from './dashboard/feature/progress-bar/progress-bar.component';
 
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,8 @@ import { ProgressBarComponent } from './dashboard/feature/progress-bar/progress-
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
