@@ -36,6 +36,7 @@ export class AppComponent {
       mainTitle: 'CLEAR WEB SEVERITIES',
       featureGraphData: [
         {
+          chartId: 1,
           row: [
             {
               r: 70,
@@ -103,6 +104,7 @@ export class AppComponent {
       mainTitle: 'CLEAR WEB SEVERITIES',
       featureGraphData: [
         {
+          chartId: 2,
           row: [
             {
               r: 70,
