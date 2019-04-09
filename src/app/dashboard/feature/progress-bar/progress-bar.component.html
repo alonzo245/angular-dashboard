@@ -1,0 +1,8 @@
+<div class="progress-box"  *ngFor="let value of values[0].row;">
+    <div class="progress-box-title">{{value.title}}</div>
+    <div class="progress-bar-wrapper">
+      <div class="progress-box-graph" [style.width.%]="value.pregress"></div>
+      <div class="progress-box-background"></div>
+    </div>
+    <span class="progress-sum">{{value.sum}}</span>
+  </div>

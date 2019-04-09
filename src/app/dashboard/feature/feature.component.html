@@ -2,12 +2,17 @@
   <div class="title">{{data.mainTitle}}</div>
 
   <ng-container *ngFor="let item of data.featureData; let myIndex = index">
-
-    <ng-container [ngSwitch]="data.type">
-      <app-row-two-values-feature *ngSwitchCase="'row-two-values-feature'" [values]='data.featureData'>
+    <!-- CLEAR WEB TYPES -->
+    <ng-container>
+      <app-row-two-values-feature *ngIf="data.type == 'row-two-values-feature'" [values]='data.featureData'>
       </app-row-two-values-feature>
-
-      <!-- <div *ngSwitchDefault>...</div> -->
+      <!-- CLEAR WEB SEVERITIES -->
+      <app-graph-feature *ngIf="data.type == 'graph-feature'" [values]='data.featureGraphData'></app-graph-feature>
+      <app-row-tree-values-feature *ngIf="data.type == 'graph-feature'" [values]='data.featureData'>
+      </app-row-tree-values-feature>
+      <!-- CLEAR WEB SOURCES -->
+      <app-progress-bar *ngIf="data.type == 'clear-web-sources'" [values]='data.featureData'>
+      </app-progress-bar>
     </ng-container>
   </ng-container>
 </div>

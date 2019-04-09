@@ -1,0 +1,15 @@
+import { Component, OnInit, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-graph-feature',
+  templateUrl: './graph-feature.component.html',
+  styleUrls: ['./graph-feature.component.scss']
+})
+export class GraphFeatureComponent implements OnInit {
+
+  constructor() { }
+  @Input() values;
+  ngOnInit() {
+  }
+
+}
