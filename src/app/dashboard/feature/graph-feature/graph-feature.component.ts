@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import donutChart from 'donut-chart';
+// import donutChart from 'donut-chart';
 
 @Component({
   selector: 'app-graph-feature',
@@ -8,21 +8,12 @@ import donutChart from 'donut-chart';
 })
 export class GraphFeatureComponent implements OnInit {
 
-  constructor() {
-  }
+  constructor() {}
+
   @Input() values:number;
-  
+  // @ViewChild('chart-1') myDiv: ElementRef;
 
   ngOnInit() {
-    new donutChart(document.getElementById("chart-1"), {
-      r: 70,
-      stroke: 9,
-      scale: 100,
-      items: [
-        { label: "A", value: .2 },
-        { label: "B", value: .5 },
-        { label: "C", value: .3 }
-      ]
-    });
+    // new donutChart(myDiv, this.values[0].row[0]);
   }
 }

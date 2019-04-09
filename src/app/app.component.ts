@@ -100,36 +100,6 @@ export class AppComponent {
       ]
     },
     {
-      type: 'graph-feature',
-      mainTitle: 'CLEAR WEB SEVERITIES',
-      featureGraphData: [
-        {
-          chartId: 2,
-          row: [
-            {
-              r: 70,
-              stroke: 9,
-              scale: 100,
-              items: [
-                { label: "A", value: .2 },
-                { label: "B", value: .5 },
-                { label: "C", value: .3 }
-              ]
-            }
-          ]
-        }
-      ],
-      featureData: [
-        {
-          row: [
-            { title: 'HIGH', sum: '692' },
-            { title: 'MEDIUM', sum: '692' },
-            { title: 'LOW', sum: '219' }
-          ]
-        }
-      ]
-    },
-    {
       type: 'clear-web-sources',
       mainTitle: 'CLEAR WEB SOURCES',
       featureData: [
